@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('index');
 });
+
+//Route::get('/products', function () {
+//    return view('categories.products');
+//});
+
+Route::get('categories/{name}', 'CategoriesController@categoryAction');
+
+
